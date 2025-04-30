@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>De Rae</title>
+  <title>I Miss You, Future Rider</title>
   <style>
     body {
       margin: 0;
@@ -15,9 +15,9 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
-    .bike-container {
+    .bike-banner {
       position: absolute;
-      left: -30%;
+      left: -40%;
       bottom: 30%;
       display: flex;
       align-items: center;
@@ -26,21 +26,41 @@
 
     .bike {
       font-size: 12em;
-      transform: scaleX(-1); /* Flip to face right */
+      transform: scaleX(-1); /* Face right */
       filter: drop-shadow(2px 4px 10px red);
     }
 
-    .flag {
-      margin-left: -60px;
+    .banner {
+      display: flex;
+      margin-left: 30px;
+    }
+
+    .letter {
       background: #ff4d4d;
       color: white;
-      padding: 15px 25px;
-      border-radius: 10px;
-      font-size: 1.8em;
+      padding: 15px;
+      margin: 0 2px;
+      border-radius: 8px;
+      font-size: 1.5em;
       font-weight: bold;
-      transform: rotate(-10deg);
-      animation: flutter 0.4s infinite alternate ease-in-out;
-      box-shadow: 2px 2px 10px #000;
+      animation: heartbeat 1s infinite;
+      box-shadow: 1px 1px 6px #000;
+    }
+
+    .letter:nth-child(odd) {
+      animation-delay: 0.3s;
+    }
+
+    .letter:nth-child(even) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.2); }
+      100% { transform: scale(1); }
     }
 
     @keyframes rideForward {
@@ -57,22 +77,40 @@
         opacity: 0;
       }
     }
-
-    @keyframes flutter {
-      from { transform: rotate(-10deg); }
-      to { transform: rotate(-25deg); }
-    }
   </style>
 </head>
 <body>
-  <div class="bike-container">
-    <div class="flag">I miss you, Future Rider 🏍️❤️</div>
+  <div class="bike-banner">
     <div class="bike">🏍️</div>
+    <div class="banner">
+      <div class="letter">I</div>
+      <div class="letter"> </div>
+      <div class="letter">M</div>
+      <div class="letter">I</div>
+      <div class="letter">S</div>
+      <div class="letter">S</div>
+      <div class="letter"> </div>
+      <div class="letter">Y</div>
+      <div class="letter">O</div>
+      <div class="letter">U</div>
+      <div class="letter">,</div>
+      <div class="letter"> </div>
+      <div class="letter">F</div>
+      <div class="letter">U</div>
+      <div class="letter">T</div>
+      <div class="letter">U</div>
+      <div class="letter">R</div>
+      <div class="letter">E</div>
+      <div class="letter"> </div>
+      <div class="letter">R</div>
+      <div class="letter">I</div>
+      <div class="letter">D</div>
+      <div class="letter">E</div>
+      <div class="letter">R</div>
+      <div class="letter">❤️</div>
+    </div>
   </div>
 </body>
 </html>
-
-
-
 
 
