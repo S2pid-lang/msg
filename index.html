@@ -1,74 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>De Rachael</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #fff5f5, #ffeaea);
-            font-family: 'Segoe UI', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: #222;
-        }
+  <meta charset="UTF-8">
+  <title>De Rae to you, Rider</title>
+  <style>
+    body {
+      background: #1c1c1c;
+      color: #39ff14;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
 
-        h1 {
-            font-size: 4em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            animation: pulse 3s infinite;
-            letter-spacing: 0.1em;
-        }
+    .container {
+      white-space: pre;
+      font-size: 14px;
+      animation: move 6s linear infinite;
+    }
 
-        .word {
-            opacity: 0;
-            animation: popIn 1s forwards;
-            margin: 0 0.3em;
-            padding: 0.2em 0.6em;
-            border-radius: 10px;
-            font-weight: bold;
-            color: white;
-        }
+    @keyframes move {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
 
-        .word:nth-child(1) { animation-delay: 1s; background: #8e44ad; } 
-        .word:nth-child(2) { animation-delay: 2s; background: #e74c3c; } 
-        .word:nth-child(3) { animation-delay: 3s; background: #f39c12; } 
-        .word:nth-child(4) { animation-delay: 4s; background: #c0392b; } 
-        
-        @keyframes popIn {
-            from {
-                opacity: 0;
-                transform: scale(0.6) rotate(-10deg);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) rotate(0deg);
-            }
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.03);
-            }
-        }
-    </style>
+    .message {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+      color: #ff4c4c;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
 </head>
 <body>
-    <h1>
-        <span class="word">TU</span>
-        <span class="word">ME</span>
-        <span class="word">MANQUES</span>
-        <span class="word">❤️</span>
-    </h1>
+
+<div class="container">
+<pre>
+       ______________
+      |##############\__
+     (   o )        o  )==
+      `--'-----------'        
+     SUPERBIKE FOR YOU 🚀
+</pre>
+</div>
+
+<div class="message">I miss you, rider 🏍️💨</div>
+
 </body>
 </html>
+
 
 
 
